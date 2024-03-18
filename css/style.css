@@ -1,23 +1,128 @@
 /* Styles for Mobile Site */
+body {
+    background-color: #F5D699;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px
+}
 
 /* Header & Hero */
+header {
+    background-color: #98BDF5;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
 
+#hero p {
+    font-size: 24px;
+}
+
+#hero img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    max-height: 300px;
+    margin: 0 auto;
+}
 /* Projects */
 
+.project {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.image-container {
+    flex: 0 0 auto;
+    margin-right: 20px; 
+}
+
+.project img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    max-height: 300px;
+    margin: 0 auto;
+}
+
+.description {
+    flex: 1;
+}
+
+.project h3, p {
+    margin-left: 60px;
+}
+
 /* Reviews */
+#reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.review {
+    text-align: center;
+    margin-right: 50px; 
+    border: 2px solid #8791A0;
+    padding: 20px;
+    color: #F5D699;
+    background-color: #756950;
+}
+
+.review .name {
+    font-weight: bold;
+}
+
+.review .rating {
+    color: #ffc107; 
+}
 
 /* Footer */
-
+footer {
+    background-color: #B5AD9E;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
 
 /* Media state for Desktop site */
 @media (min-width: 1000px) {
 
     /* Header & Hero */
+    header {
+        padding: 40px;
+    }
 
     /* Projects */
+    #projects {
+        padding: 40px;
+    }
+    .project {
+         
+        margin-right: 20px;
+    }
 
     /* Reviews */
+    #reviews {
+        justify-content: center; 
+        flex-wrap: wrap; 
+    }
+    .review {
+        margin-left: 50px;
+        margin-bottom: 20px; 
+    }
 
     /* Footer */
-
+    footer {
+        padding: 20px 40px; 
+    }
 }
